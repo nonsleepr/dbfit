@@ -222,3 +222,11 @@ project('netezza') {
     }
 }
 
+project('hive') {
+    description = 'DBFit Hive engine'
+
+    dependencies {
+        compile project(':dbfit-java:core')
+        runtime 'org.apache.hive:hive-jdbc:0.10.0@jar'
+    }
+}
